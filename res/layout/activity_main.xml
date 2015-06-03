@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/UnityView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ButtonField"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF" >
+
+        <com.example.hello3.CircleView
+            android:id="@+id/cv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/but_jump"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cv"
+            android:text="jump"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/but_crouch"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/but_jump"
+            android:text="crouch"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/but_attack"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/but_crouch"
+            android:text="attack"
+            android:textColor="#000000"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
